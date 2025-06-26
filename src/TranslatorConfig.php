@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HtmlToJapaneseTranslator;
 
-use LogicException;
+use InvalidArgumentException;
 
 final class TranslatorConfig
 {
@@ -18,7 +18,7 @@ final class TranslatorConfig
     public function __construct(string|array $apiKey, string $modelName = 'gemini-1.5-flash')
     {
         if (empty($apiKey)) {
-            throw new LogicException('API key cannot be empty.');
+            throw new InvalidArgumentException('API key cannot be empty.');
         }
 
         $this->apiKeys = is_string($apiKey) ? [$apiKey] : $apiKey;
