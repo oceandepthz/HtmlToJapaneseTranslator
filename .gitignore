@@ -1,0 +1,30 @@
+# Composer dependencies
+/vendor/
+composer.lock
+
+# IDEs and editors
+/.idea/
+/.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/build/
+/dist/
+*.phar
+
+# Logs and temporary files
+*.log
+/tmp/
+
+# Local configuration
+.env
+.env.local
+.env.*.local
+
+# Tool-specific
+/.gemini/
