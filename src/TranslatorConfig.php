@@ -15,7 +15,7 @@ final class TranslatorConfig
 
     private string $modelName;
 
-    public function __construct(string|array $apiKey, string $modelName = 'gemini-1.5-flash')
+    public function __construct(string|array $apiKey, string $modelName = 'gemini-2.5-flash')
     {
         if (empty($apiKey)) {
             throw new LogicException('API key cannot be empty.');
